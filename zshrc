@@ -35,3 +35,6 @@ export NVM_DIR="/Users/$USER/.nvm"
 # go bits and pieces
 export GOPATH="/Users/$USER/code/go"
 export PATH="/usr/local/sbin:$PATH:$GOPATH/bin"
+
+# gitignore
+function gitignore() { curl -L -s https://www.gitignore.io/api/$@ ;}
