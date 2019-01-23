@@ -59,3 +59,7 @@ alias dcu='docker-compose up'
 alias dcub='docker-compose up --rebuild'
 alias dcb='docker-compose build'
 alias dcd='docker-compose down'
+
+# git stuff
+alias push='git push -u origin head'
+alias pr='push && hub pull-request'
