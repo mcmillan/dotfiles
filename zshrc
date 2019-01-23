@@ -40,9 +40,9 @@ export PATH="/usr/local/sbin:$PATH:$GOPATH/bin"
 # gitignore
 function gitignore() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
-# dido
+# play a random dido track for 30 seconds
 function dido() {
-  curl --silent "https://itunes.apple.com/lookup?id=20646&entity=song&limit=10" | ruby -e "require 'json'; puts JSON.parse(STDIN.read)['results'].map { |r| r['previewUrl'] }.compact.shuffle.first" | xargs curl --silent > /tmp/dido.m4a
+  curl --silent "https://itunes.apple.com/lookup?id=20646&entity=song&limit=30" | ruby -e "require 'json'; puts JSON.parse(STDIN.read)['results'].map { |r| r['previewUrl'] }.compact.shuffle.first" | xargs curl --silent > /tmp/dido.m4a
   afplay /tmp/dido.m4a
   rm /tmp/dido.m4a
 }
