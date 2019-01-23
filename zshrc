@@ -11,7 +11,7 @@ ZSH_THEME="agnoster"
 HYPHEN_INSENSITIVE="true"
 
 # oh-my-zsh plugins
-plugins=(git ruby rails bundler node npm nvm)
+plugins=(git ruby rails bundler node npm nvm docker docker-compose)
 
 # load oh-my-zsh stuff
 source $ZSH/oh-my-zsh.sh
@@ -43,3 +43,19 @@ function gitignore() { curl -L -s https://www.gitignore.io/api/$@ ;}
 # dido
 alias dido='curl --silent https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/b1/c4/aa/mzm.hmyvdzut.aac.p.m4a > /tmp/dido.m4a && afplay /tmp/dido.m4a && rm /tmp/dido.m4a'
 
+# make stuff
+alias mu='make up'
+alias mt='make test'
+alias mtw='make test-watch'
+alias mm='make migrate-dev && make migrate-test'
+alias mmd='make migrate-dev'
+alias mmt='make migrate-test'
+alias mgm='make generate-migration'
+alias mrb='make rebuild'
+alias mfuck='make oh-god-please-help-me'
+
+# docker-compose stuff
+alias dcu='docker-compose up'
+alias dcub='docker-compose up --rebuild'
+alias dcb='docker-compose build'
+alias dcd='docker-compose down'
