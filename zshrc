@@ -38,3 +38,7 @@ export PATH="/usr/local/sbin:$PATH:$GOPATH/bin"
 
 # gitignore
 function gitignore() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
+# dido
+alias dido='curl --silent https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/b1/c4/aa/mzm.hmyvdzut.aac.p.m4a > /tmp/dido.m4a && afplay /tmp/dido.m4a && rm /tmp/dido.m4a'
+
