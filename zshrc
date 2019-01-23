@@ -61,6 +61,7 @@ alias dcb='docker-compose build'
 alias dcd='docker-compose down'
 
 # git stuff
+alias sup='git status'
 alias push='git push -u origin head'
 alias pr='push && hub pull-request'
 alias chop='git checkout master && git reset --hard && git clean -fd && git pull --rebase && git checkout -b'
