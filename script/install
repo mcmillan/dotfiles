@@ -9,6 +9,7 @@ readonly DOTFILES="
   gemrc
   gitconfig
   gitignore_global
+  vimrc
   zshrc
 "
 
