@@ -33,6 +33,7 @@ export NVM_DIR="/Users/$USER/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # go bits and pieces
+export GO111MODULE="on"
 export GOPATH="/Users/$USER/code/go"
 export PATH="/usr/local/sbin:$PATH:$GOPATH/bin"
 
