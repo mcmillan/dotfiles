@@ -11,7 +11,7 @@ ZSH_THEME="agnoster"
 HYPHEN_INSENSITIVE="true"
 
 # oh-my-zsh plugins
-plugins=(git ruby rails bundler node npm nvm docker docker-compose)
+plugins=(git ruby rails bundler node npm nvm docker-compose)
 
 # load oh-my-zsh stuff
 source $ZSH/oh-my-zsh.sh
@@ -29,8 +29,9 @@ alias atom=code
 eval "$(rbenv init -)"
 
 # enable nvm
-export NVM_DIR="/Users/$USER/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
 # go bits and pieces
 export GO111MODULE="on"
@@ -46,6 +47,9 @@ function dido() {
   afplay /tmp/dido.m4a
   rm /tmp/dido.m4a
 }
+
+# gpg fixes
+export GPG_TTY=$(tty)
 
 # make stuff
 alias mu='make up'
