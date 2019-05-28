@@ -11,6 +11,7 @@ readonly DOTFILES="
   gitignore_global
   vimrc
   zshrc
+  npmrc
 "
 
 for file in $DOTFILES; do
