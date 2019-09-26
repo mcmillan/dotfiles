@@ -78,3 +78,6 @@ alias push='git push -u origin head'
 alias pr='push && hub pull-request'
 alias chop='read -q "REPLY?sure? (this is destructive) y/n" && git checkout master && git reset --hard && git clean -fd && git pull --rebase && git checkout -b'
 alias commit='ga . && gc'
+
+# flutter
+export PATH="$PATH:/Users/$USER/.flutter-sdk/bin"
