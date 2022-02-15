@@ -1,7 +1,7 @@
 [user]
 	name = Josh McMillan
-	email = josh@joshmcmillan.co.uk
-	signingkey = B1C9DA7B
+	email = josh@joshmcmillan.com
+	signingkey = 411EC1845AA88D02
 
 [core]
 	excludesfile = ~/.gitignore_global
