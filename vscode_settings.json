@@ -28,7 +28,6 @@
     "rubocop": true
   },
   "scm.diffDecorations": "gutter",
-  "search.location": "panel",
   "search.showLineNumbers": true,
   "search.smartCase": true,
   "terminal.explorerKind": "external",
