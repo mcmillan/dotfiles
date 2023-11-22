@@ -13,9 +13,11 @@
 
 [commit]
 	gpgsign = true
-
-[url "git@github.com:"]
-	insteadOf = https://github.com/
+	template = /Users/jmcmillan/.gitmessage
 
 [help]
 	autocorrect = 10
+[init]
+	defaultBranch = main
+[gpg]
+	program = /opt/homebrew/bin/gpg
