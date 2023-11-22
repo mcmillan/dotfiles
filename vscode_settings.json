@@ -1,55 +1,160 @@
 {
+  "workbench.editor.enablePreview": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.newWindowDimensions": "maximized",
+  "gitlens.codeLens.authors.enabled": false,
+  "html.format.wrapLineLength": 120,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.titleBarStyle": "native",
+  "workbench.tips.enabled": false,
+  "scm.diffDecorations": "gutter",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.startupEditor": "none",
+  "workbench.editor.tabCloseButton": "off",
+  "editor.wrappingIndent": "indent",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.accessibilitySupport": "off",
-  "editor.dragAndDrop": false,
-  "editor.folding": false,
-  "editor.fontFamily": "Input Mono",
-  "editor.fontSize": 11,
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.parameterHints.cycle": true,
-  "editor.suggest.localityBonus": true,
-  "editor.tabSize": 2,
-  "editor.wordWrap": "bounded",
-  "editor.wordWrapColumn": 120,
-  "editor.wrappingIndent": "indent",
-  "explorer.openEditors.visible": 0,
-  "files.autoSave": "afterDelay",
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
-  "html.format.wrapLineLength": 120,
-  "ruby.format": "rubocop",
-  "ruby.lint": {
-    "rubocop": true
-  },
-  "scm.diffDecorations": "gutter",
-  "search.showLineNumbers": true,
-  "search.smartCase": true,
-  "terminal.explorerKind": "external",
-  "terminal.external.osxExec": "iTerm.app",
-  "window.nativeTabs": true,
-  "window.newWindowDimensions": "maximized",
-  "window.restoreWindows": "none",
-  "window.titleBarStyle": "native",
-  "window.zoomLevel": 0,
-  "workbench.activityBar.visible": false,
-  "workbench.editor.closeEmptyGroups": false,
-  "workbench.editor.closeOnFileDelete": true,
-  "workbench.editor.enablePreview": false,
-  "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.labelFormat": "short",
+  "editor.wordWrap": "bounded",
+  "search.smartCase": true,
+  "window.nativeTabs": true,
+  "explorer.openEditors.visible": 0,
+  "editor.fontSize": 11,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "terminal.explorerKind": "external",
+  "window.restoreWindows": "none",
+  "editor.formatOnPaste": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.external.osxExec": "iTerm.app",
+  "files.insertFinalNewline": true,
+  "workbench.editor.showIcons": false,
+  "editor.fontFamily": "Input Mono",
+  "editor.wordWrapColumn": 140,
+  "files.trimTrailingWhitespace": true,
+  "editor.dragAndDrop": false,
+  "editor.suggest.localityBonus": true,
+  "search.showLineNumbers": true,
+  "files.autoSave": "afterDelay",
+  "workbench.editor.closeEmptyGroups": false,
+  "workbench.view.alwaysShowHeaderActions": true,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "editor.accessibilitySupport": "off",
+  "files.trimFinalNewlines": true,
   "workbench.editor.openPositioning": "first",
   "workbench.editor.restoreViewState": false,
-  "workbench.editor.showIcons": false,
-  "workbench.editor.swipeToNavigate": true,
-  "workbench.editor.tabCloseButton": "off",
-  "workbench.startupEditor": "none",
-  "workbench.statusBar.feedback.visible": false,
-  "workbench.tips.enabled": false,
-  "workbench.view.alwaysShowHeaderActions": true
+  "workbench.editor.highlightModifiedTabs": true,
+  "editor.parameterHints.cycle": true,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "telemetry.telemetryLevel": "off",
+  "editor.folding": false,
+  "workbench.activityBar.iconClickBehavior": "focus",
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "alert",
+      "iconColour": "#ff9900",
+      "gutterIcon": true,
+      "background": "#aa6600",
+      "foreground": "#ffffff",
+      "type": "text"
+    },
+    "FIXME": {
+      "icon": "flame",
+      "iconColour": "#ff0000",
+      "background": "#cc0000",
+      "foreground": "#ffffff",
+      "fontWeight": "bold",
+      "gutterIcon": true,
+      "type": "text"
+    },
+    "XXX": {
+      "icon": "$(close)"
+    }
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.linting.mypyEnabled": true,
+  "python.formatting.provider": "black",
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[csv]": {
+    "editor.wordWrap": "off"
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "gitlens.autolinks": [
+    {
+      "prefix": "WEB",
+      "url": "https://linear.app/tuple/issue/<num>"
+    }
+  ],
+  "gitlens.views.searchAndCompare.files.layout": "list",
+  "[dynamic csv]": {
+    "editor.wordWrap": "off"
+  },
+  "rewrap.wrappingColumn": 120,
+  "editor.inlineSuggest.enabled": true,
+  "git.enableCommitSigning": true,
+  "git.autofetch": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": false,
+    "crystal": false
+  },
+  "rubyLsp.rubyVersionManager": "rbenv",
+  "rubyLsp.enabledFeatures": {
+    "codeActions": true,
+    "diagnostics": true,
+    "documentHighlights": true,
+    "documentLink": true,
+    "documentSymbols": true,
+    "foldingRanges": true,
+    "formatting": true,
+    "hover": true,
+    "inlayHint": true,
+    "onTypeFormatting": true,
+    "selectionRanges": true,
+    "semanticHighlighting": true,
+    "completion": true
+  },
+  "files.associations": {
+    "_redirects": "plaintext"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.rulers": [
+      120
+    ],
+    "editor.semanticHighlighting.enabled": true
+  },
+  "rubyLsp.enableExperimentalFeatures": true,
+  "rubyTestExplorer.logpanel": true,
+  "rubyTestExplorer.debugCommand": "bundle exec rdebug-ide",
+  "cmake.configureOnOpen": true,
+  "editor.semanticTokenColorCustomizations": {
+
+  }
 }
