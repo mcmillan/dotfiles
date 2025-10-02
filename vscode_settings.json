@@ -85,7 +85,9 @@
   },
   "python.linting.mypyEnabled": true,
   "python.formatting.provider": "black",
-  "prettier.documentSelectors": ["**/*.astro"],
+  "prettier.documentSelectors": [
+    "**/*.astro"
+  ],
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -114,7 +116,9 @@
     "markdown": false,
     "crystal": false
   },
-  "rubyLsp.rubyVersionManager": "rbenv",
+  "rubyLsp.rubyVersionManager": {
+    "identifier": "rbenv"
+  },
   "rubyLsp.enabledFeatures": {
     "codeActions": true,
     "diagnostics": true,
@@ -137,7 +141,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[ruby]": {
-    "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.defaultFormatter": "testdouble.vscode-standard-ruby",
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.tabSize": 2,
@@ -150,11 +154,13 @@
     ],
     "editor.semanticHighlighting.enabled": true
   },
-  "rubyLsp.enableExperimentalFeatures": true,
   "rubyTestExplorer.logpanel": true,
   "rubyTestExplorer.debugCommand": "bundle exec rdebug-ide",
   "cmake.configureOnOpen": true,
-  "editor.semanticTokenColorCustomizations": {
-
+  "editor.semanticTokenColorCustomizations": {},
+  "workbench.editor.tabActionCloseVisibility": false,
+  "rubyLsp.linters": null,
+  "rubyLsp.featureFlags": {
+    "all": true
   }
 }
